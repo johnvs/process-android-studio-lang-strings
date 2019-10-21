@@ -1,4 +1,4 @@
-package com.johnvanstrien.extractAndroidStudioLangStrings;
+package com.johnvanstrien.processAndroidStudioLangStrings;
 
 import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVPrinter;
@@ -10,7 +10,7 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.util.*;
 
-public class ExtractAndroidStudioLangStrings {
+public class ProcessAndroidStudioLangStrings {
 
     private static final String XML_FILE_EXTENSION = "xml";
     private static final String CSV_FILE_EXTENSION = "csv";
@@ -196,7 +196,7 @@ public class ExtractAndroidStudioLangStrings {
     }
 
     public static void main(String[] args) {
-        ExtractAndroidStudioLangStrings app = new ExtractAndroidStudioLangStrings();
+        ProcessAndroidStudioLangStrings app = new ProcessAndroidStudioLangStrings();
         app.run(args);
     }
 }
