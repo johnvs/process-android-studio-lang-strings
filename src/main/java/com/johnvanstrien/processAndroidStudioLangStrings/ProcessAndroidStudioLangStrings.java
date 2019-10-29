@@ -35,6 +35,7 @@ public class ProcessAndroidStudioLangStrings {
     private static final String COMMENT_START = "<!--";
     private static final String COMMENT_END = "-->";
     private static final String OUTPUT_FILE_PREFIX = "ToBeTranslated-";
+    private static final String STRING_NAME = "String Name";
     private static final String INPUT_FILE_PREFIX = "translated-";
     private static final String REGEX_LEADING_WHITESPACE = "^\\s*";
 
@@ -445,7 +446,7 @@ public class ProcessAndroidStudioLangStrings {
                 outCsv = new CSVPrinter(outWriter, CSVFormat.EXCEL);
 
                 // Write file header
-                outCsv.printRecord("key", "English", languageNames.get(toBeTranslatedLangId));
+                outCsv.printRecord(STRING_NAME, languageNames.get(defaultLanguageCode), languageNames.get(toBeTranslatedLangId));
 
             } catch (IOException e) {
                 System.out.println("Error encountered when outputting files - " + e);
