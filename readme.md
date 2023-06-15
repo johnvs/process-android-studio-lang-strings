@@ -1,6 +1,6 @@
 ## processAndroidStudioLangStrings
-This project helps with processing of foreign language (FL) strings for Android apps. It helps by exporting strings that need 
-translation and importing the translated strings. 
+This project helps with processing of foreign language (FL) strings for Android apps. It helps by exporting strings that 
+need translation and importing the translated strings. 
 
 There is currently little error checking, and things like the default language are currently hard coded (to English 
 in this case).
@@ -12,7 +12,8 @@ utility and some afterwards.
 To create files with the strings that need to be translated, follow these steps:
 1. Add a bunch of new strings to the default language file (.../res/values/strings.xml).
 2. Create a directory for the operation (outside of the Android project directory structure).
-3. Copy all the string files from the app into this new directory.
+3. Copy all the string files from the app into this new directory, appending the two letter language code to the 
+filename (i.e. "strings-en.xml", "strings-es.xml", "strings-zh.xml").
 4. Execute pASLS with option -e (export) on the string file directory.
 5. This will result in a new file for each FL string file, named ToBeTranslated-\<language>.csv, for example 
 ToBeTranslated-Chinese.csv.
