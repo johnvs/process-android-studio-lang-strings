@@ -95,7 +95,7 @@ public class Import {
     private enum InputColumns {
         stringName,
         english,
-        foreignLang;
+        foreignLang
     }
 
     // Find all the files with the given extension and return them as a List<File>
